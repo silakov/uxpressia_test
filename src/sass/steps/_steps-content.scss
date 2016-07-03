@@ -1,0 +1,23 @@
+.steps-content {
+  text-align: center;
+  width: 100%;
+  height: $heigth-content;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+  &__title {
+    @include font(3.31, 1.09, $gloria);
+    margin: 0 0 2.37vh;
+    width: 100%;
+  }
+  &__text {
+    @include font(2.1, 1.4, $benchnine);
+    margin: 0;
+    width: 100%;
+  }
+  &__holder {
+    width: 100%;
+    padding: 20px 0;
+  }
+}

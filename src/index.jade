@@ -1,0 +1,111 @@
+doctype html
+html(lang="en")
+  head
+    title test1
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(href='css/main.css' rel='stylesheet')
+  body
+    #home.main-page
+      header.steps-header
+        a.steps-header__link(href='#step-one') GALLARY
+    .steps
+      #step-one.steps__item
+        header.steps-header
+          a.steps-header__link.steps-header__link_prev(href='#home') Home
+          ul.steps-list
+            li.steps-list__item
+              a.steps-list__link.steps-list__link_active(href='#step-one') 1
+            li.steps-list__item
+              a.steps-list__link(href='#step-two') 2
+            li.steps-list__item
+              a.steps-list__link(href='#step-three') 3
+            li.steps-list__item
+              a.steps-list__link(href='#step-four') 4
+          a.steps-header__link.steps-header__link_next(href='#step-two') Next
+        .steps-visual
+          .steps-visual__box
+            .steps-visual__holder(data-animate="first")
+              img.steps-visual__img(src='https://scontent-vie1-1.cdninstagram.com/t51.2885-15/e35/13534347_781155495321575_2069950543_n.jpg?ig_cache_key=MTI4MDQ0ODI2NDE3NjgyNjY4Mg%3D%3D.2')
+        .steps-content
+          .steps-content__holder
+            h1.steps-content__title
+              | step-one
+            p.steps-content__text
+              | text step-one
+        button.steps-signup.
+          button-one
+      #step-two.steps__item
+        header.steps-header
+          a.steps-header__link.steps-header__link_prev(href='#step-one') Prev
+          ul.steps-list
+            li.steps-list__item
+              a.steps-list__link(href='#step-one') 1
+            li.steps-list__item
+              a.steps-list__link.steps-list__link_active(href='#step-two') 2
+            li.steps-list__item
+              a.steps-list__link(href='#step-three') 3
+            li.steps-list__item
+              a.steps-list__link(href='#step-four') 4
+          a.steps-header__link.steps-header__link_next(href='#step-three') Next
+        .steps-visual
+          .steps-visual__box
+            .steps-visual__holder(data-animate="first")
+              img.steps-visual__img(src='https://scontent-vie1-1.cdninstagram.com/t51.2885-15/e35/13437291_1773562619526108_663525300_n.jpg?ig_cache_key=MTI4MDQ1Nzc3NzA4NDcwODQxNg%3D%3D.2')
+        .steps-content
+          .steps-content__holder
+            h1.steps-content__title
+              | step-two
+            p.steps-content__text
+              | text step-two
+        button.steps-signup.
+          button-two
+      #step-three.steps__item
+        header.steps-header
+          a.steps-header__link.steps-header__link_prev(href='#step-two') Prev
+          ul.steps-list
+            li.steps-list__item
+              a.steps-list__link(href='#step-one') 1
+            li.steps-list__item
+              a.steps-list__link(href='#step-two') 2
+            li.steps-list__item
+              a.steps-list__link.steps-list__link_active(href='#step-three') 3
+            li.steps-list__item
+              a.steps-list__link(href='#step-four') 4
+          a.steps-header__link.steps-header__link_next(href='#step-four') Next
+        .steps-visual
+          .steps-visual__box
+            .steps-visual__holder(data-animate="first")
+              img.steps-visual__img(src='https://scontent-vie1-1.cdninstagram.com/t51.2885-15/e35/13534633_1125774817493612_216896546_n.jpg?ig_cache_key=MTI4MDQ0MDkxNzU3NjQyMjc3OQ%3D%3D.2')
+        .steps-content
+          .steps-content__holder
+            h1.steps-content__title
+              | step-three
+            p.steps-content__text
+              | text step-three
+        button.steps-signup.
+          button-three
+      #step-four.steps__item
+        header.steps-header
+          a.steps-header__link.steps-header__link_prev(href='#step-three') Prev
+          ul.steps-list
+            li.steps-list__item
+              a.steps-list__link(href='#step-one') 1
+            li.steps-list__item
+              a.steps-list__link(href='#step-two') 2
+            li.steps-list__item
+              a.steps-list__link(href='#step-three') 3
+            li.steps-list__item
+              a.steps-list__link.steps-list__link_active(href='#step-four') 4
+          a.steps-header__link.steps-header__link_next(href='#home') Home
+        .steps-visual
+          .steps-visual__box
+            .steps-visual__holder(data-animate="first")
+              img.steps-visual__img(src='https://scontent-vie1-1.cdninstagram.com/t51.2885-15/e35/13534460_1141564089240063_1310128213_n.jpg?ig_cache_key=MTI4MDQ2ODk0MDk4ODMxNjk1Ng%3D%3D.2')
+        .steps-content
+          .steps-content__holder
+              h1.steps-content__title
+                | step-four
+              p.steps-content__text
+                | text step-four
+        button.steps-signup.
+          button-four

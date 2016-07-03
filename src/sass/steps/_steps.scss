@@ -1,0 +1,31 @@
+.steps {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url('../img/main-bg.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  @include desktop-main;
+
+  &__item {
+    @include anim-zoom(zoomOut);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(.6);
+    background-image: url('../img/main-bg.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    @include desktop-main;
+  }
+}
+#step-one:target,
+#step-two:target,
+#step-three:target,
+#step-four:target {
+  @include anim-zoom(zoomIn);
+}

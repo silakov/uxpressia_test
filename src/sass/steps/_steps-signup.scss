@@ -1,0 +1,9 @@
+.steps-signup {
+  @include font(3.1, 1.1, $benchnine);
+  color: $color-text;
+  height: $height-header;
+  background: rgba(161,255,50,0.5);
+  border: 0;
+  padding: 0;
+  width: 100%;
+}

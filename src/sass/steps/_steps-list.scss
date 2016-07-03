@@ -1,0 +1,36 @@
+.steps-list {
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    font: 0/0 a;
+    margin: 0 1vw 0 0.4vw;
+    display: inline-block;
+    vertical-align: top;
+    @include desktop {
+      margin: 0 7px 0 1px;
+    }
+  }
+  &__link {
+    display: block;
+    text-indent: -9999px;
+    width: 2.7vw;
+    max-width: 20px;
+    border: 1px solid $color-text;
+    border-radius: 50%;
+    @include desktop {
+      width: 20px;
+    }
+
+    &:before {
+      content: '';
+      padding-top: 100%;
+      display: block;
+    }
+
+    &_active,
+    &:hover {
+      background: $color-text;
+    }
+  }
+}

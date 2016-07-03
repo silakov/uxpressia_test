@@ -1,0 +1,26 @@
+.steps-header {
+  width: 100%;
+  display: flex;
+  height: $height-header;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.5);
+
+  &__link {
+    @include font(2, 1, $benchnine);
+    color: $color-text;
+    width: 12vw;
+    display: inline-block;
+    margin: 0 5vw;
+    text-decoration: none;
+    @include desktop {
+      width: 8%;
+      margin: 0 3%;
+    }
+
+    &_next {
+      text-align: right;
+    }
+  }
+}
