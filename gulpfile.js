@@ -8,6 +8,7 @@ var jade            = require('gulp-jade');
 var imagemin        = require('gulp-imagemin');
 var livereload      = require('gulp-livereload');
 var server          = require('gulp-server-livereload');
+var clean           = require('gulp-rimraf');
 
 var src = {
   jade: "src/*.jade",
@@ -17,10 +18,10 @@ var src = {
 };
 
 var dest = {
-  html: "dest/",
-  img: "dest/img",
-  css: "dest/css",
-  fonts: "dest/fonts/"
+  html: "docs/",
+  img: "docs/img",
+  css: "docs/css",
+  fonts: "docs/fonts/"
 };
 
 livereload({ start: true })
@@ -77,6 +78,12 @@ gulp.task("watch", function() {
 });
 
 gulp.task('default', ['sass', 'jade', 'copy-img', 'copy-fonts', 'server', 'watch'], function() {});
+
+gulp.task('clean', function () {
+  return gulp
+    .src('docs', { read: false })
+    .pipe(clean());
+});
 
 gulp.task('css', function () {
   return gulp
