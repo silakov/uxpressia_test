@@ -7,105 +7,54 @@ html(lang="en")
   body
     #home.main-page
       header.steps-header
-        a.steps-header__link(href='#step-one') GALLARY
+        a.steps-header__link(href='#step-1') GALLARY
     .steps
-      #step-one.steps__item
-        header.steps-header
-          a.steps-header__link.steps-header__link_prev(href='#home') Home
-          ul.steps-list
-            li.steps-list__item
-              a.steps-list__link.steps-list__link_active(href='#step-one') 1
-            li.steps-list__item
-              a.steps-list__link(href='#step-two') 2
-            li.steps-list__item
-              a.steps-list__link(href='#step-three') 3
-            li.steps-list__item
-              a.steps-list__link(href='#step-four') 4
-          a.steps-header__link.steps-header__link_next(href='#step-two') Next
-        .steps-visual
-          .steps-visual__box
-            .steps-visual__holder(data-animate="first")
-              img.steps-visual__img(src='https://scontent-vie1-1.cdninstagram.com/t51.2885-15/e35/13534347_781155495321575_2069950543_n.jpg?ig_cache_key=MTI4MDQ0ODI2NDE3NjgyNjY4Mg%3D%3D.2')
-        .steps-content
-          .steps-content__holder
-            h1.steps-content__title
-              | step-one
-            p.steps-content__text
-              | text step-one
-        button.steps-signup.
-          button-one
-      #step-two.steps__item
-        header.steps-header
-          a.steps-header__link.steps-header__link_prev(href='#step-one') Prev
-          ul.steps-list
-            li.steps-list__item
-              a.steps-list__link(href='#step-one') 1
-            li.steps-list__item
-              a.steps-list__link.steps-list__link_active(href='#step-two') 2
-            li.steps-list__item
-              a.steps-list__link(href='#step-three') 3
-            li.steps-list__item
-              a.steps-list__link(href='#step-four') 4
-          a.steps-header__link.steps-header__link_next(href='#step-three') Next
-        .steps-visual
-          .steps-visual__box
-            .steps-visual__holder(data-animate="first")
-              img.steps-visual__img(src='https://scontent-vie1-1.cdninstagram.com/t51.2885-15/e35/13437291_1773562619526108_663525300_n.jpg?ig_cache_key=MTI4MDQ1Nzc3NzA4NDcwODQxNg%3D%3D.2')
-        .steps-content
-          .steps-content__holder
-            h1.steps-content__title
-              | step-two
-            p.steps-content__text
-              | text step-two
-        button.steps-signup.
-          button-two
-      #step-three.steps__item
-        header.steps-header
-          a.steps-header__link.steps-header__link_prev(href='#step-two') Prev
-          ul.steps-list
-            li.steps-list__item
-              a.steps-list__link(href='#step-one') 1
-            li.steps-list__item
-              a.steps-list__link(href='#step-two') 2
-            li.steps-list__item
-              a.steps-list__link.steps-list__link_active(href='#step-three') 3
-            li.steps-list__item
-              a.steps-list__link(href='#step-four') 4
-          a.steps-header__link.steps-header__link_next(href='#step-four') Next
-        .steps-visual
-          .steps-visual__box
-            .steps-visual__holder(data-animate="first")
-              img.steps-visual__img(src='https://scontent-vie1-1.cdninstagram.com/t51.2885-15/e35/13534633_1125774817493612_216896546_n.jpg?ig_cache_key=MTI4MDQ0MDkxNzU3NjQyMjc3OQ%3D%3D.2')
-        .steps-content
-          .steps-content__holder
-            h1.steps-content__title
-              | step-three
-            p.steps-content__text
-              | text step-three
-        button.steps-signup.
-          button-three
-      #step-four.steps__item
-        header.steps-header
-          a.steps-header__link.steps-header__link_prev(href='#step-three') Prev
-          ul.steps-list
-            li.steps-list__item
-              a.steps-list__link(href='#step-one') 1
-            li.steps-list__item
-              a.steps-list__link(href='#step-two') 2
-            li.steps-list__item
-              a.steps-list__link(href='#step-three') 3
-            li.steps-list__item
-              a.steps-list__link.steps-list__link_active(href='#step-four') 4
-          a.steps-header__link.steps-header__link_next(href='#home') Home
-        .steps-visual
-          .steps-visual__box
-            .steps-visual__holder(data-animate="first")
-              img.steps-visual__img(src='https://scontent-vie1-1.cdninstagram.com/t51.2885-15/e35/13534460_1141564089240063_1310128213_n.jpg?ig_cache_key=MTI4MDQ2ODk0MDk4ODMxNjk1Ng%3D%3D.2')
-        .steps-content
-          .steps-content__holder
+      -
+        steps = [
+          {
+            name: 'one',
+            image: 'https://scontent-frx5-1.cdninstagram.com/vp/c2713d084ebe9f61adb66cafa6904851/5E3FB7A0/t51.2885-15/sh0.08/e35/p750x750/13534347_781155495321575_2069950543_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&_nc_cat=111'
+          },
+          {
+            name: 'two',
+            image: 'https://scontent-frx5-1.cdninstagram.com/vp/6ee51646ae10371af2f11a0b0eab5e18/5E3F3D5B/t51.2885-15/sh0.08/e35/p750x750/13437291_1773562619526108_663525300_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&_nc_cat=100'
+          },
+          {
+            name: 'three',
+            image: 'https://scontent-frx5-1.cdninstagram.com/vp/88f123a71bcb79594286b7a038df085a/5E4270D5/t51.2885-15/sh0.08/e35/s750x750/13534633_1125774817493612_216896546_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&_nc_cat=108'
+          },
+          {
+            name: 'four',
+            image: 'https://scontent-frx5-1.cdninstagram.com/vp/5e7ec2754f62ff7dd45f9df40a5fe3c1/5E4666DD/t51.2885-15/sh0.08/e35/s640x640/13437239_529797260537271_1320543099_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&_nc_cat=103'
+          },
+        ]
+      each val, index in steps
+        div(id="step-#{index + 1}").steps__item
+          header.steps-header
+            if index<1
+              a.steps-header__link.steps-header__link_prev(href='#home') Home
+            else
+              a.steps-header__link.steps-header__link_prev(href='#step-#{index}') Prev
+            ul.steps-list
+              each item, step in steps
+                li.steps-list__item
+                  if step===index
+                    a.steps-list__link.steps-list__link_active(href='#step-#{step + 1}')= step + 1
+                  else
+                    a.steps-list__link(href='#step-#{step + 1}')= step + 1
+            if index == steps.length - 1
+              a.steps-header__link.steps-header__link_next(href='#home') Home
+            else
+              a.steps-header__link.steps-header__link_next(href='#step-#{index + 2}') Next
+          .steps-visual
+            .steps-visual__box
+              .steps-visual__holder
+                img.steps-visual__img(src=val.image)
+          .steps-content
+            .steps-content__holder
               h1.steps-content__title
-                | step-four
+                | step-#{val.name}
               p.steps-content__text
-                | text step-four
-        button.steps-signup.
-          button-four
+                | text step-#{val.name}
+          button.steps-button
+            | button-#{val.name}

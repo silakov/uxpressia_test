@@ -3,7 +3,7 @@
   overflow: hidden;
   position: relative;
   background-image: url('../img/main-bg.jpg');
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   @include desktop-main;
 
@@ -18,14 +18,15 @@
     opacity: 0;
     transform: scale(.6);
     background-image: url('../img/main-bg.jpg');
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     @include desktop-main;
   }
 }
-#step-one:target,
-#step-two:target,
-#step-three:target,
-#step-four:target {
+
+#step-1:target,
+#step-2:target,
+#step-3:target,
+#step-4:target {
   @include anim-zoom(zoomIn);
 }
